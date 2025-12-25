@@ -7,8 +7,6 @@
 
 Natural Command Assistant simplifies the execution of complex scripts by converting your text instructions into secure function calls. Powered locally by FunctionGemma-270M, it guarantees total confidentiality and deterministic execution without API fees. It is the ideal interface for making your deployment and testing tools accessible to the entire team without the risk of human error.
 
----
-
 ## 🎯 Business Problem
 
 In many technical teams:
@@ -24,8 +22,6 @@ In many technical teams:
 * Dependency on specific individuals
 * Human errors
 * Friction between Dev, QA, and Product teams
-
----
 
 ## ✅ The Solution
 
@@ -46,8 +42,6 @@ run_tests(type="unit", environment="dev")
 The AI **does not make decisions**:
 It simply **structures the user's intent** to trigger an authorized action.
 
----
-
 ## 🧠 Why FunctionGemma?
 
 This project uses **FunctionGemma-270M-IT (Google)**, a model designed **specifically for function calling**.
@@ -62,8 +56,6 @@ This project uses **FunctionGemma-270M-IT (Google)**, a model designed **specifi
 
 👉 We don't need a general-purpose chatbot here; we need a **reliable and controllable tool**.
 
----
-
 ## 🏗️ Architecture
 
 ```mermaid
@@ -76,8 +68,6 @@ flowchart TD
 
 ```
 
----
-
 ## 🔒 Separation of Concerns
 
 | Component | Role |
@@ -87,8 +77,6 @@ flowchart TD
 | Business Scripts | Executes only authorized actions |
 
 👉 The model **cannot execute arbitrary code**.
-
----
 
 ## ⚙️ Exposed Functions (Example)
 
@@ -101,8 +89,6 @@ Each function:
 * Is explicitly defined
 * Has a strict schema
 * Limits possible parameters (whitelist)
-
----
 
 ## 🚀 Installation
 
@@ -117,8 +103,6 @@ source .venv/bin/activate
 uv pip install -r requirements.txt
 ```
 
----
-
 ## ▶️ Running the Assistant
 
 ```bash
@@ -132,8 +116,6 @@ Run unit test in dev environment
 Deploy version 1.2.3 to preprod
 Generate test report in PDF
 ```
-
----
 
 ## 🧪 Real Output Example
 
@@ -151,8 +133,6 @@ Application interpretation:
 ✅ 'unit' tests launched on the 'dev' environment
 ```
 
----
-
 ## 🛡️ Security & Reliability
 
 * ✅ No direct execution from the LLM
@@ -160,8 +140,6 @@ Application interpretation:
 * ✅ Validated parameters
 * ✅ Local model (no data leaks)
 * ✅ Reproducible results
-
----
 
 ## 📈 Business Value
 
@@ -171,16 +149,12 @@ Application interpretation:
 * 🔐 Better control over critical actions
 * 💸 Zero AI infrastructure costs
 
----
-
 ## 🧠 Lessons Learned
 
 * Not all AI use cases **require** a giant LLM.
 * The **instruction format** is as important as the model itself.
 * Function calling is an excellent business interface.
 * Local-first is often an advantage, not a constraint.
-
----
 
 ## 🔮 Future Roadmap
 
@@ -190,8 +164,6 @@ Application interpretation:
 * CI/CD integration
 * Web or Slack interface
 * Fine-tuning on internal vocabulary
-
----
 
 ## 📣 Conclusion
 
