@@ -1,9 +1,10 @@
 # 🧠 Natural Command Assistant
-
-### Natural Language → Secure Business Commands (Local LLM)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Python: 3.12+](https://img.shields.io/badge/python-3.12+-blue.svg)
 ![Model: FunctionGemma](https://img.shields.io/badge/Model-FunctionGemma-orange.svg)
+
+### Natural Language → Secure Business Commands (Local LLM)
+
 ---
 
 ## 🎯 Business Problem
